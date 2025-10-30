@@ -83,9 +83,28 @@ body {
   font-size: 0.9rem;
 }
 
-.responsive-img {
-  max-width: 50%;
+figure {
+  max-width: 37.5%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  border-radius: 8px; /* optional for a nice look */
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+/* 📱 Mobile-friendly breakpoint */
+@media (max-width: 600px) {
+  figure {
+    max-width: 100%;
+  }
 }
